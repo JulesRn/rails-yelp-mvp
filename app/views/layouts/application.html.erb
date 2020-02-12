@@ -11,6 +11,17 @@
   </head>
 
   <body>
+    <nav class="bg-light">
+      <div class="row d-flex justify-content-between bg-light">
+        <div class="column p-4 ml-3">
+          <h2 id="menu"><%= link_to "Yelp", restaurants_path %></h2>
+        </div>
+        <div class="column p-4 mr-3">
+          <button type="button" class="btn btn-outline-primary"><%= link_to "Add a restaurant", new_restaurant_path %></button>
+        </div>
+      </div>
+    </nav>
+
     <%= yield %>
   </body>
 </html>

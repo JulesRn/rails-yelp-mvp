@@ -1,0 +1,22 @@
+
+<div class="container">
+  <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    <%= @restaurant.name %>
+  </div>
+  <ul class="card-body">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+</div>
+
+<ul>
+  <li></li>
+  <li><%= @restaurant.address %></li>
+  <li><%= @restaurant.category %></li>
+  <li><%= @restaurant.phone_number %></li>
+</ul>
+
+<%= link_to 'Leave a review', new_restaurant_review_path(@restaurant) %>
